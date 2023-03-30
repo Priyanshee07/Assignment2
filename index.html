@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+  <!-- section 1  -->
+  <div class="container">
+    <div class="section1">
+      <input type="text" placeholder="Enter your text here" id="textInput">
+      <button id="submitButton">Post</button>
+      <!-- section 2 -->
+    </div>
+    <hr>
+    <div class="section2">
+      <div id="header">
+        <img src="https://as2.ftcdn.net/v2/jpg/02/79/66/93/1000_F_279669366_Lk12QalYQKMczLEa4ySjhaLtx1M2u7e6.jpg"
+          alt="Quincy Larson's profile picture" class="profile-thumbnail">
+        <div class="profile-name">
+          <div id="name">Priyanshee Panjwani
+            <span id="size">@Priyanshee</span>
+          </div>
+        </div>
+        <div class="follow-btn">
+          <button>Follow</button>
+        </div>
+      </div>
+
+      <div id="inner">
+        <p> </p>
+        <span class="date">1:32 PM - 05 Mar 2023</span>
+        <hr>
+      </div>
+      <div id="footer">
+        <div class="stats">
+          <div class="Retweets">
+            <b>1000</b> Retweets
+          </div>
+          <div class="likes">
+            <b>1000</b> Likes
+          </div>
+        </div>
+        <div class="cta">
+          <button class="share-btn">Share</button>
+          <button class="retweet-btn">Retweet</button>
+          <button class="like-btn">Like</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // button
+    const button = document.querySelector("button");
+    const input = document.querySelector("input");
+    const paragraph = document.querySelector("#inner p");
+
+    button.addEventListener("click", () => {
+      paragraph.textContent = input.value;
+      input.value = "";
+    });
+  </script>
+</body>
+
+</html>

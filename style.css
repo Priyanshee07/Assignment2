@@ -1,0 +1,112 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  padding: 5px;
+}
+
+#header,
+#footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#header .profile-thumbnail {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+}
+
+#header .profile-name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  flex-wrap: wrap;
+
+}
+
+#header .follow-btn {
+  display: flex;
+  margin: 0 0 0 auto;
+  flex-wrap: wrap;
+
+}
+
+#header .follow-btn button {
+  border: 0;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+#name {
+  display: flex;
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+#size {
+  font-size: 1.2rem;
+}
+
+#inner p {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#inner hr {
+  margin: 10px 0;
+  border-style: solid;
+  opacity: 0.1;
+}
+
+#footer .stats {
+  display: flex;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+}
+
+
+
+#footer .stats .likes {
+  margin-left: 10px;
+}
+
+#footer .cta {
+  margin-left: auto;
+  font-size: 0.9rem;
+}
+
+#footer .cta button {
+  border: 0;
+  background: transparent;
+  font-size: 0.9rem;
+}
+
+.section1 {
+  /* height: 30vh; */
+  flex:3;
+}
+
+.section2 {
+  /* height: 70vh; */
+  flex:7;
+}
+
+#textInput {
+  height: 40px;
+  width: 300px;
+  font-size: 18px;
+}
+
+#submitButton {
+  margin-left: 10px;
+  height: 45px;
+  width: 70px;
+}
+
+.container{
+  height: 100vh;
+  
+}
